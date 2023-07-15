@@ -1,8 +1,6 @@
 import discord
 import responses
 
-# https://discord.com/api/oauth2/authorize?client_id=1129723240256897094&permissions=21434035338304&scope=bot
-
 async def send_message(message, user_message, is_private):
     try:
         response = responses.get_response(user_message)
